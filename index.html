@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Header -->
     <header>
       <div class="container header-container">
         <div class="logo">
@@ -29,7 +28,6 @@
       </div>
     </header>
 
- 
     <main class="container">
       <section class="intro">
         <h1>Hi <span id="welcome-name">Hi,</span>, Welcome To Website</h1>
@@ -40,7 +38,6 @@
           class="main-image"
         />
       </section>
-
 
       <section class="facilities">
         <h2>Our Facilitation</h2>
@@ -72,41 +69,38 @@
       <section class="message-form">
         <h2>Message Us</h2>
         <div class="form-container">
-            <form id="contact-form" onsubmit="validateForm(event)">
-                <label for="name">Nama:</label>
-                <input type="text" id="name" name="name"><br>
-            
-                <label for="dob">Tanggal Lahir</label>
-                <input type="date" id="dob" name="dob"><br>
-            
-                <label>Jenis Kelamin:</label>
-                <input type="radio" id="male" name="gender" value="Male">
-                <label for="male">Laki - Laki</label>
-                <input type="radio" id="female" name="gender" value="Female">
-                <label for="female">Perempuan</label><br>
-            
-                <label for="message">Pesan:</label>
-                <textarea id="message" name="message"></textarea><br>
-            
-                <button type="submit">Submit</button>
-            </form>
-            
-            <div id="output"></div>
-            
-        
-            <div id="output"></div>
+          <form id="contact-form" onsubmit="validateForm(event)">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="dob">Tanggal Lahir:</label>
+            <input type="date" id="dob" name="dob" />
+
+            <label>Jenis Kelamin:</label>
+            <input type="radio" id="male" name="gender" value="Male" />
+            <label for="male">Laki - Laki</label>
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female">Perempuan</label>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Submit</button>
           </form>
+
+          <div id="output"></div>
 
           <div class="info-box">
             <p>Current time: Fri Jan 27 2023 17:23:48 GMT+0700</p>
             <p>Nama: Agustian</p>
-            <p>Tanggal Lahir : 31/08/2002</p>
-            <p>Jenis Kelamin : Laki - Laki</p>
-            <p>Pesan : Lagi Belajar Buat Website</p>
+            <p>Tanggal Lahir: 31/08/2002</p>
+            <p>Jenis Kelamin: Laki - Laki</p>
+            <p>Pesan: Lagi Belajar Buat Website</p>
           </div>
         </div>
       </section>
     </main>
+
     <script src="js/script.js"></script>
   </body>
 </html>
