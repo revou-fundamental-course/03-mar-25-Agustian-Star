@@ -1,39 +1,112 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - School Profile</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
     <header>
+      <div class="container header-container">
+        <div class="logo">
+          <img
+            src="assets/Logo.png"
+            alt="Website Logo"
+            width="30"
+            height="30"
+          />
+        </div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Our Profile</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Our Profile</a></li>
+            <li><a href="achivement.html">Achievement</a></li>
+            <li><a href="message.html">Message Us</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
 
-    <section class="banner">
-        <h1>Welcome to Our School</h1>
-        <p id="welcomeMessage">Hi, <span id="userName">Guest</span>!</p>
-        <input type="text" id="nameInput" placeholder="Enter your name">
-        <button onclick="updateWelcome()">Submit</button>
-    </section>
+ 
+    <main class="container">
+      <section class="intro">
+        <h1>Hi <span id="welcome-name">Hi,</span>, Welcome To Website</h1>
+        <p>Ini adalah website latihan pertama</p>
+        <img
+          src="https://storage.googleapis.com/a1aa/image/EZT_G_ijsho4UxF1VFkLEu8sMkatI2MxpkU19elZPT0.jpg"
+          alt="Main Content Image"
+          class="main-image"
+        />
+      </section>
 
-    <section class="about">
-        <h2>About Our School</h2>
-        <p>Our school is dedicated to providing high-quality education...</p>
-    </section>
 
-    <section class="vision-mission">
-        <h2>Vision & Mission</h2>
-        <p>Our vision is to create a bright future for students...</p>
-    </section>
+      <section class="facilities">
+        <h2>Our Facilitation</h2>
+        <div class="facility-list">
+          <div class="facility">
+            <img
+              src="https://storage.googleapis.com/a1aa/image/mQfeg8Tquas4e4ptPchZllHQDhJBf-IYFpdOurbhOw0.jpg"
+              alt="Professional Teacher"
+            />
+            <p>Professional Teacher</p>
+          </div>
+          <div class="facility">
+            <img
+              src="https://storage.googleapis.com/a1aa/image/uXsF4NGVIZs_lGADoCvFkAw07NkOiB_92uj0mTNis24.jpg"
+              alt="Sport Field"
+            />
+            <p>Sport Field</p>
+          </div>
+          <div class="facility">
+            <img
+              src="https://storage.googleapis.com/a1aa/image/95oBjF56DK_cYry4e0oeB5IFc4-s2CtcU1x5fhRA0SE.jpg"
+              alt="Classroom"
+            />
+            <p>Classroom</p>
+          </div>
+        </div>
+      </section>
 
+      <section class="message-form">
+        <h2>Message Us</h2>
+        <div class="form-container">
+            <form id="contact-form" onsubmit="validateForm(event)">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name"><br>
+            
+                <label for="dob">Tanggal Lahir</label>
+                <input type="date" id="dob" name="dob"><br>
+            
+                <label>Jenis Kelamin:</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Laki - Laki</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Perempuan</label><br>
+            
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message"></textarea><br>
+            
+                <button type="submit">Submit</button>
+            </form>
+            
+            <div id="output"></div>
+            
+        
+            <div id="output"></div>
+          </form>
+
+          <div class="info-box">
+            <p>Current time: Fri Jan 27 2023 17:23:48 GMT+0700</p>
+            <p>Nama: Agustian</p>
+            <p>Tanggal Lahir : 31/08/2002</p>
+            <p>Jenis Kelamin : Laki - Laki</p>
+            <p>Pesan : Lagi Belajar Buat Website</p>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
